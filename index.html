@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Zero Gravity</title>
+    <link href='https://fonts.googleapis.com/css?family=Baloo+Chettan|Press+Start+2P' rel='stylesheet'>
+    <link href='./style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <h1 id='player_msg'>Oh, no! We are out of gravity.<br>Please hold me from spinning around.</h1>
+
+    <img class='rotating' id='bunny' src='spaceglenda300s.png' width='20%' height='20%'>
+    <script>
+      var bunny = document.querySelector('#bunny');
+      var player_msg = document.querySelector('#player_msg');
+      function rotateBunny() {
+        if (bunny.getAttribute('class') === 'stationary') {
+          player_msg.innerHTML = 'Oh, no! We are out of gravity.<br>Please hold me from spinning around.'
+          bunny.setAttribute('class', 'rotating')
+        }
+        else {
+          player_msg.innerHTML = 'Phew!<br>Thanks, it was a bit too rotaty.'
+          bunny.setAttribute('class', 'stationary')
+        }
+      }
+      bunny.onclick = rotateBunny;    
+    </script>
+
+  </body>
+</html>
