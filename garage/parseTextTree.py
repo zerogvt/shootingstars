@@ -10,6 +10,8 @@ def build_tree(lines):
     lines = iter(lines)
     stack = []
     for line in lines:
+        if (len(line)==0 or line[0] not in ['|',  '+', '-', '\\', '/']):
+            continue
         indent = len(list(takewhile(is_indent, line)))
         if (indent==0):
             continue
