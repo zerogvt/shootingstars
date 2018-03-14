@@ -1,2 +1,2 @@
 # shootingstars - a PoC for a fairy tale
-[preview] (http://htmlpreview.github.com/?https://github.com/zerogvt/shootingstars/edit/master/index.html)
+[preview](http://htmlpreview.github.com/?https://github.com/zerogvt/shootingstars/blob/master/index.html)
