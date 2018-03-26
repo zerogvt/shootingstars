@@ -8,7 +8,14 @@
   </head>
   <body>
     <h1 id='player_msg'>Oh, no! We are out of gravity.<br>Please hold me from spinning around.</h1>
-    <a id='exit_msg' href='https://en.wikipedia.org/wiki/Earth'>back to eARTh</a>
+
+    <button id="exit_msg" onclick="goBack()">back to eARTh</button>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+
     <img class='rotating' id='bunny' src='spaceglenda300s.png' width='20%' height='20%'>
     <script>
       var bunny = document.querySelector('#bunny');
