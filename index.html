@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1 id='player_msg'>Oh, no! We are out of gravity.<br>Please hold me from spinning around.</h1>
-
+    <button id='exit_msg' onclick="history.back();">Enough.Let me go</button>
     <img class='rotating' id='bunny' src='spaceglenda300s.png' width='20%' height='20%'>
     <script>
       var bunny = document.querySelector('#bunny');
@@ -23,7 +23,9 @@
           bunny.setAttribute('class', 'stationary')
         }
       }
-      bunny.onclick = rotateBunny;    
+      bunny.onclick = rotateBunny;
+      
+      exit_msg.onclick = { }
     </script>
 
   </body>
